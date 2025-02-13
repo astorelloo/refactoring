@@ -16,15 +16,6 @@ def home():
     print(user_info) #capiamo la struttura di user_info per usarle nel frontend
     return render_template('home.html', user_info=user_info, playlists=playlists_info) #passo le info utente all'home.html
 
-sp_oauth = SpotifyOAuth(
-    client_id=SPOTIFY_CLIENT_ID,
-    client_secret=SPOTIFY_CLIENT_SECRET,
-    redirect_uri=SPOTIFY_REDIRECT_URI,
-    scope="user-read-private", #permessi x informazioni dell'utente
-    show_dialog=True #forziamo la richiesta di inserire new credenziali
-)
-
-
 @home_bp.route('/playlist/<playlist_id>')
 def playlist_details(playlist_id):
     token_info = session.get('token_info', None)
