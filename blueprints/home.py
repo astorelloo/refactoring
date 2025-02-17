@@ -25,6 +25,6 @@ def playlist_details(playlist_id):
     sp = spotipy.Spotify(auth=token_info['access_token'])
     brani = sp.playlist_items(playlist_id)
     brani_specifici = brani['items']
-    return render_template('brani.html',brani = brani_specifici)
+    return render_template('playlist.html',brani = brani_specifici)
 
 

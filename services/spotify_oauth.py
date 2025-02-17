@@ -4,7 +4,7 @@ from spotipy.oauth2 import SpotifyOAuth
 #le tue credenziali le trovi nella dashboard di prima
 SPOTIFY_CLIENT_ID = "a0a2db3b4cb5471f9d5b2ba16544f32d"
 SPOTIFY_CLIENT_SECRET = "c6f8c960594d41638d56aadd2668ce4c"
-SPOTIFY_REDIRECT_URI = "https://5000-astorelloo-refactoring-01hod411ni7.ws-eu117.gitpod.io/callback" #DA AGGIUNGERE
+SPOTIFY_REDIRECT_URI = "https://5000-astorelloo-refactoring-n05725zgu3h.ws-eu117.gitpod.io/callback" #DA AGGIUNGERE
 
 sp_oauth = SpotifyOAuth(
     client_id=SPOTIFY_CLIENT_ID,
